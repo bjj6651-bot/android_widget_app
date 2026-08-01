@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#0A0A0A">
+
+    <!-- 제목 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="시간표 위젯"
+        android:textSize="28sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="8dp" />
+
+    <!-- 설명 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="항상 화면 위에 떠있는 시간표 위젯"
+        android:textSize="14sp"
+        android:textColor="#999999"
+        android:layout_marginBottom="32dp" />
+
+    <!-- 상태 표시 -->
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="위젯 상태: 중지됨"
+        android:textSize="16sp"
+        android:textColor="#FF006E"
+        android:layout_marginBottom="24dp"
+        android:padding="16dp"
+        android:background="#1A1A2E"
+        android:gravity="center" />
+
+    <!-- 시작 버튼 -->
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="위젯 시작"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:background="#FF006E"
+        android:layout_marginBottom="12dp"
+        android:stateListAnimator="@null" />
+
+    <!-- 중지 버튼 -->
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="위젯 중지"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:background="#8338EC"
+        android:enabled="false"
+        android:stateListAnimator="@null" />
+
+    <!-- 정보 섹션 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="32dp"
+        android:padding="16dp"
+        android:background="#1A1A2E">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="주의사항"
+            android:textSize="14sp"
+            android:textColor="#FF006E"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• 위젯을 시작하면 항상 화면 위에 표시됩니다\n• 드래그하여 위치를 변경할 수 있습니다\n• 배터리 소비가 증가할 수 있습니다\n• 앱을 종료해도 위젯은 유지됩니다"
+            android:textSize="12sp"
+            android:textColor="#CCCCCC"
+            android:lineSpacingExtra="4dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

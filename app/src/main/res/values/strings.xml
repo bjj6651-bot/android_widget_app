@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">시간표 위젯</string>
+    <string name="start_widget">위젯 시작</string>
+    <string name="stop_widget">위젯 중지</string>
+    <string name="widget_running">위젯이 실행 중입니다</string>
+    <string name="widget_stopped">위젯이 중지되었습니다</string>
+    <string name="permission_required">권한을 허용해주세요</string>
+</resources>
